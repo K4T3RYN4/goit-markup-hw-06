@@ -58,6 +58,76 @@
           </svg>
         </button>
       </div>
+      <!-- #region mobile menu -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-exit-btn" type="button">
+            <svg class="exit-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-nav-list-menu">
+              <li class="mobile-menu-list-item">
+                <a class="mobile-link-list-item current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="menu-list-item">
+                <a class="mobile-link-list-item" href="">Portfolio</a>
+              </li>
+              <li class="menu-list-item">
+                <a class="mobile-link-list-item" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-list-item">
+                <a href="mailto:info@devstudio.com" class="mobile-contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-address-list-item">
+                <a href="tel:+110001111111" class="mobile-contact"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-media-list">
+            <li class="mobile-social-item">
+              <a href="" class="mobile-team-social-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-team-social-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-team-social-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-team-social-link">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- #endregion mobile menu -->
       <!-- #endregion header  -->
     </header>
     <main>
@@ -574,16 +644,37 @@
         </form>
       </div>
     </div>
+    <!-- #endregion modal  -->
     <script>
-      const modal = document.querySelector(".backdrop");
-      const openBtn = document.getElementById("open-modal-btn");
-      const closeBtn = document.querySelector(".exit-btn");
+      // === Скрипт бургер-меню ===
+      const burgerMenu = document.querySelector(".mobile-menu");
+      const burgerOpenBtn = document.querySelector(".burger-btn");
+      const burgerCloseBtn = document.querySelector(".mobile-exit-btn");
 
-      openBtn.addEventListener("click", () => {
+      burgerOpenBtn.addEventListener("click", () => {
+        burgerMenu.classList.add("is-open");
+      });
+
+      burgerCloseBtn.addEventListener("click", () => {
+        burgerMenu.classList.remove("is-open");
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && burgerMenu.classList.contains("is-open")) {
+          burgerMenu.classList.remove("is-open");
+        }
+      });
+
+      // === Скрипт модального вікна ===
+      const modal = document.querySelector(".backdrop");
+      const modalOpenBtn = document.getElementById("open-modal-btn");
+      const modalCloseBtn = document.querySelector(".exit-btn");
+
+      modalOpenBtn.addEventListener("click", () => {
         modal.classList.add("is-open");
       });
 
-      closeBtn.addEventListener("click", () => {
+      modalCloseBtn.addEventListener("click", () => {
         modal.classList.remove("is-open");
       });
 
@@ -599,6 +690,5 @@
         }
       });
     </script>
-    <!-- #endregion modal  -->
   </body>
 </html>
