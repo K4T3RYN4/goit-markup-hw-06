@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
+    <!-- <link rel="stylesheet" href="./css/styles-old.css" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,6 +52,11 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
       <!-- #endregion header  -->
     </header>
@@ -67,7 +74,7 @@
       <!-- #region features-info section -->
       <section class="features-section">
         <div class="container features-container">
-          <h2 class="visually-hidden">About: section</h2>
+          <h2 class="visually-hidden">About us</h2>
           <ul class="features-list">
             <li class="features-list-item">
               <div class="rectangle-bed">
