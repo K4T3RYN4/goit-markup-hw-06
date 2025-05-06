@@ -12,6 +12,7 @@
     }
  
     .header-container {
+        height: 72px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -134,7 +135,7 @@
     }
 
     .features-list-item {
-        flex-basis: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 
     .feature-name {
@@ -158,7 +159,6 @@
 
     .team-list-item {
         flex-basis: calc((100% - 72px) / 4);
-        max-width: 264px;
     }
 
     /* #endregion team section */
@@ -182,7 +182,7 @@
     /* #region footer */
 
     .footer-container {
-        margin: 96px;
+        margin: 96px 0;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0px;
