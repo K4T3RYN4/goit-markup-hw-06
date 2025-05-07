@@ -105,7 +105,7 @@
     /* #region hero section */
     
     .hero-section {
-        max-width: 768px;
+        min-width: 768px;
         padding: 112px 136px;
     }
 

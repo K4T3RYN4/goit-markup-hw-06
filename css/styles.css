@@ -293,7 +293,7 @@ button {
     background-image: linear-gradient(var(--grey),var(--grey)), url(../images/background-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 320px;
+    min-width: 320px;
     padding: 72px 52px 0 52px;
     background-size: cover;
 }
@@ -725,7 +725,7 @@ button {
 
 .btn-decoration-icon {
     fill: #FFFFFF;
-    /* margin-left: 16px; */
+    margin-left: 16px;
 }
 /* #endregion footer */
 
