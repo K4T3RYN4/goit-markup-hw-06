@@ -7,7 +7,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/styles-old.css" /> -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/tablet-query.css" />
     <link rel="stylesheet" href="./css/desktop-query.css" />
@@ -205,12 +204,35 @@
           <h2 class="team-header">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img
-                src="./images/teammate1-mark.jpg"
-                alt="man with beard and dark hair"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teammate1-mark.jpg 1x,
+                    ./images/team1-1158-2x.jpg  2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate1-mark.jpg 1x,
+                    ./images/team1-1158-2x.jpg  2x
+                  "
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teammate1-mark.jpg 1x,
+                    ./images/team1-1158-2x.jpg  2x
+                  "
+                />
+                <img
+                  src="./images/teammate1-mark.jpg"
+                  alt="man with beard and dark hair"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="temmate-info">
                 <h3 class="teammate-name">Mark Guerrero</h3>
                 <p class="teammate-position">Product Designer</p>
@@ -247,12 +269,35 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/teammate2-tom.jpg"
-                alt="man with light hair and smile"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teammate2-tom.jpg 1x,
+                    ./images/team2-1158-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate2-tom.jpg 1x,
+                    ./images/team2-1158-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teammate2-tom.jpg 1x,
+                    ./images/team2-1158-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/teammate2-tom.jpg"
+                  alt="man with light hair and smile"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="temmate-info">
                 <h3 class="teammate-name">Tom Ford</h3>
                 <p class="teammate-position">Frontend Developer</p>
@@ -289,12 +334,35 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/teammate3-camila.jpg"
-                alt="young woman with long dark hair and pink sweater"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teammate3-camila.jpg 1x,
+                    ./images/team3-1158-2x.jpg    2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate3-camila.jpg 1x,
+                    ./images/team3-1158-2x.jpg    2x
+                  "
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teammate3-camila.jpg 1x,
+                    ./images/team3-1158-2x.jpg    2x
+                  "
+                />
+                <img
+                  src="./images/teammate3-camila.jpg"
+                  alt="young woman with long dark hair and pink sweater"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="temmate-info">
                 <h3 class="teammate-name">Camila Garcia</h3>
                 <p class="teammate-position">Marketing</p>
@@ -331,12 +399,35 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/teammate4-daniel.jpg"
-                alt="young hipster man"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teammate4-daniel.jpg 1x,
+                    ./images/team4-1158-2x.jpg    2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teammate4-daniel.jpg 1x,
+                    ./images/team4-1158-2x.jpg    2x
+                  "
+                />
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/teammate4-daniel.jpg 1x,
+                    ./images/team4-1158-2x.jpg    2x
+                  "
+                />
+                <img
+                  src="./images/teammate4-daniel.jpg"
+                  alt="young hipster man"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="temmate-info">
                 <h3 class="teammate-name">Daniel Wilson</h3>
                 <p class="teammate-position">UI Designer</p>
@@ -383,12 +474,17 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="overlay-bed">
-                <img
-                  src="./images/banking.jpg"
-                  alt="banking app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source media="(max-width: 767px)" srcset="" />
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(min-width: 1158px)" srcset="" />
+                  <img
+                    src="./images/banking.jpg"
+                    alt="banking app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -402,12 +498,17 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay-bed">
-                <img
-                  src="./images/payment.jpg"
-                  alt="cashless payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source media="(max-width: 767px)" srcset="" />
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(min-width: 1158px)" srcset="" />
+                  <img
+                    src="./images/payment.jpg"
+                    alt="cashless payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -421,12 +522,17 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay-bed">
-                <img
-                  src="./images/meditation.jpg"
-                  alt="meditation app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source media="(max-width: 767px)" srcset="" />
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(min-width: 1158px)" srcset="" />
+                  <img
+                    src="./images/meditation.jpg"
+                    alt="meditation app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -440,12 +546,17 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay-bed">
-                <img
-                  src="./images/taxi.jpg"
-                  alt="taxi service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source media="(max-width: 767px)" srcset="" />
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(min-width: 1158px)" srcset="" />
+                  <img
+                    src="./images/taxi.jpg"
+                    alt="taxi service"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -459,12 +570,17 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay-bed">
-                <img
-                  src="./images/illustrations.jpg"
-                  alt="screen illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source media="(max-width: 767px)" srcset="" />
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(min-width: 1158px)" srcset="" />
+                  <img
+                    src="./images/illustrations.jpg"
+                    alt="screen illustrations"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -478,12 +594,17 @@
             </li>
             <li class="portfolio-list-item">
               <div class="overlay-bed">
-                <img
-                  src="./images/courses.jpg"
-                  alt="online courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source media="(max-width: 767px)" srcset="" />
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(min-width: 1158px)" srcset="" />
+                  <img
+                    src="./images/courses.jpg"
+                    alt="online courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App

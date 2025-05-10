@@ -106,7 +106,7 @@
     
     .hero-section {
         min-width: 768px;
-        padding: 112px 136px;
+        padding: 112px 0;
     }
 
     .hero-container {
@@ -147,7 +147,7 @@
     /* #region team section */
 
     .team-section {
-        padding: 96px 92px;
+        padding: 96px 0;
     }
 
     .team-list {
