@@ -103,10 +103,17 @@
     /* #endregion header */
 
     /* #region hero section */
-    
+    @media (min-width: 768px) and (min-resolution: 192dpi) {
+        .hero-section {
+            background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero-tab-2x.jpg);
+        }
+    }
+
+
     .hero-section {
         min-width: 768px;
         padding: 112px 0;
+        background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero-tab-1x.jpg);
     }
 
     .hero-container {
